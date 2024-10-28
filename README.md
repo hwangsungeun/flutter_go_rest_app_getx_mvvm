@@ -1,4 +1,4 @@
-# 플러터 GetX, MVVM 활용 프로젝트
+# 플러터 GetX, MVVM 프로젝트
 
 1. GetX
 2. MVVM
