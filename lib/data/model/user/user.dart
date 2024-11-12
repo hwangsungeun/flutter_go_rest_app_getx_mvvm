@@ -14,27 +14,21 @@ class User {
     required this.gender,
     required this.status,});
 
-  User.fromJson(dynamic json) {
-    id = json['id'];
-    name = json['name'];
-    email = json['email'];
-    gender = json['gender'];
-    status = json['status'];
-  }
-  int? id;
-  String? name;
-  String? email;
-  String? gender;
-  String? status;
+  factory User.fromJson(Map<String, dynamic> json) => _$UserFromJson(json);
 
-  Map<String, dynamic> toJson() {
-    final map = <String, dynamic>{};
-    map['id'] = id;
-    map['name'] = name;
-    map['email'] = email;
-    map['gender'] = gender;
-    map['status'] = status;
-    return map;
-  }
+  int? id;
+  final String name;
+  final String email;
+  final Gender gender;
+  @JsonKey(name: "status")
+  final UserStatus status;
+
+  Map<String, dynamic> toJson() => _$UserToJson(this);
 
 }
+
+@JsonEnum()
+enum Gender {male, female, all}
+
+@JsonEnum()
+enum UserStatus {inactive, active, all}
