@@ -18,5 +18,5 @@ class AppString {
   static const internalServerError = "Internal server error";
   static const badGateway = "Bad gateway";
 
-  static const appFont = "Roboto";
+  static const appFont = "Pretendard";
 }

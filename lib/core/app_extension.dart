@@ -1,12 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_go_rest_app_getx_mvvm/core/app_asset.dart';
 
 extension StringExtension on String {
-  String get getGenderWidget {
-    if (this == "male") return AppAsset.male;
-    return AppAsset.female;
-  }
-
   String get toCapital {
     return "${this[0].toUpperCase()}${substring(1).toLowerCase()}";
   }
