@@ -12,3 +12,4 @@
 9. json_annotation
 10. build_runner
 11. json_serializable
+12. flutter_spinkit
