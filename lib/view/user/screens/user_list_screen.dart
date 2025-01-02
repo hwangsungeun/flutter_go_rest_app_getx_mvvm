@@ -4,9 +4,9 @@ import 'package:flutter_go_rest_app_getx_mvvm/common/widget/empty_widget.dart';
 import 'package:flutter_go_rest_app_getx_mvvm/common/widget/spinkit_indicator.dart';
 import 'package:flutter_go_rest_app_getx_mvvm/core/app_asset.dart';
 import 'package:flutter_go_rest_app_getx_mvvm/core/app_style.dart';
+import 'package:flutter_go_rest_app_getx_mvvm/data/model/user/user.dart';
 import 'package:flutter_go_rest_app_getx_mvvm/di.dart';
-import 'package:flutter_go_rest_app_getx_mvvm/features/user/data/models/user/user.dart';
-import 'package:flutter_go_rest_app_getx_mvvm/features/user/presentation/controller/user_controller.dart';
+import 'package:flutter_go_rest_app_getx_mvvm/viewmodel/user/controller/user_controller.dart';
 import 'package:get/get.dart';
 
 enum UserOperation { edit, delete, post, todo }

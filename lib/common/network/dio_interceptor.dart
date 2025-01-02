@@ -1,7 +1,7 @@
 import 'package:dio/dio.dart';
 import 'package:flutter_go_rest_app_getx_mvvm/common/util/log.dart';
-import 'package:logger/logger.dart';
 import 'package:flutter_go_rest_app_getx_mvvm/core/app_extension.dart';
+import 'package:logger/logger.dart';
 
 class DioInterceptor extends Interceptor {
 
